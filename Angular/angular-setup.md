@@ -1,4 +1,4 @@
-# empowher-angular
+# EMPOWher-angular
 empowher-angular program is designed for angular training.
 
 ## Editor: VSCode
