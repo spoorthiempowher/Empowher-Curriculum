@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            url = uri("https://nexus.ad.moodys.net/central/content/groups/moodys-central/")
+        }
+    }
+}
+rootProject.name = 'coursedataapi'

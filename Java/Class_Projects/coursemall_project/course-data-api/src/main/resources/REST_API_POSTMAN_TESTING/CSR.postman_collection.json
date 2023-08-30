@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "3a4159e9-010c-40e2-9f31-16767dc27d0a",
+		"name": "CSR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getCandidates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/courseMall/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"candidates"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getCandidates",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/courseMall/candidates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"courseMall",
+								"candidates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"candidateId\": 104,\n        \"candidateName\": \"Candidate Name - 014\",\n        \"mobileNo\": \"12345 67894\",\n        \"emailId\": \"Email Id - 024\",\n        \"candidateRemark\": \"Candidate Remark - 034\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getCandidateByCandidateId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/courseMall/candidate/104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"candidate",
+						"104"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getCandidateByCandidateId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/courseMall/candidate/104",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"courseMall",
+								"candidate",
+								"104"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "153"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateId\": 104,\n    \"candidateName\": \"Candidate Name - 014\",\n    \"mobileNo\": \"12345 67894\",\n    \"emailId\": \"Email Id - 024\",\n    \"candidateRemark\": \"Candidate Remark - 034\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getCourses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/courseMall/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"courses"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getCourses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/courseMall/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"courseMall",
+								"courses"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"courseId\": 501,\n        \"courseName\": \"Course Name - 01\",\n        \"coursePrice\": 80,\n        \"courseRemark\": \"Course Remark - 01\"\n    },\n    {\n        \"courseId\": 503,\n        \"courseName\": \"Course Name - 03\",\n        \"coursePrice\": 81,\n        \"courseRemark\": \"Course Remark - 03\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "retrieveCourseByCourseId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/courseMall/course/503",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"course",
+						"503"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "retrieveCourseByCourseId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/courseMall/course/503",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"courseMall",
+								"course",
+								"503"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "101"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"courseId\": 503,\n    \"courseName\": \"Course Name - 03\",\n    \"coursePrice\": 81,\n    \"courseRemark\": \"Course Remark - 03\"\n}"
+				}
+			]
+		},
+		{
+			"name": "postCandidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"candidateName\": \"Candidate Name - 01\",\r\n\t\"mobileNo\": \"12345 67890\",\r\n    \"emailId\": \"Email Id - 01\",\r\n    \"candidateRemark\": \"Candidate Remark - 01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/courseMall/newCandidate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"newCandidate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCandidate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"candidateName\": \"Candidate Name - 014\",\r\n\t\"mobileNo\": \"12345 67894\",\r\n    \"emailId\": \"Email Id - 024\",\r\n    \"candidateRemark\": \"Candidate Remark - 034\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/courseMall/104/candidate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"104",
+						"candidate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"courseName\": \"Course Name - 01\",\r\n    \"coursePrice\": \"80\",\r\n    \"courseRemark\": \"Course Remark - 01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/courseMall/newCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"newCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCourse",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"courseName\": \"Course Name - 03\",\r\n    \"coursePrice\": \"81\",\r\n    \"courseRemark\": \"Course Remark - 03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/courseMall/503/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"503",
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCandidate",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/courseMall/103/candidate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"103",
+						"candidate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCourse",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/courseMall/502/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courseMall",
+						"502",
+						"course"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

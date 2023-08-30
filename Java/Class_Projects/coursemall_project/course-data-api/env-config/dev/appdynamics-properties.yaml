@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ${APPD_CONFIG_MAP_NAME}
+  namespace: ${NAMESPACE}
+  labels:
+    app: ${APPLICATION_NAME}
+    color: ${COLOR}
